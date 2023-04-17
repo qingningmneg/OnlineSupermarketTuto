@@ -7,20 +7,29 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace OnlineSupermarketTuto.Assets
+namespace OnlineSupermarketTuto.Views.Admin
 {
 
 
-    public partial class Login
+    public partial class Suppliers
     {
 
         /// <summary>
-        /// form1 控件。
+        /// DropDownList1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+
+        /// <summary>
+        /// GridView1 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridView1;
     }
 }

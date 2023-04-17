@@ -1,35 +1,22 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="Products.aspx.cs" Inherits="OnlineSupermarketTuto.Views.Admin.Products" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="Categories.aspx.cs" Inherits="OnlineSupermarketTuto.Views.Admin.Categories" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container-fluid">
+     <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <h3 class="text-center">商品管理</h3>
+                <h3 class="text-center">类目管理</h3>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-4">
             <div class="mb-3">
-                <label for="" class="form-label text-success">商品名称</label>
+                <label for="" class="form-label text-success">类目名称</label>
                 <input type="text" placeholder="" autocomplete="off" class="form-control" />
             </div>
             <div class="mb-3">
-                <label for="" class="form-label text-success">生产商名称</label>
-                <asp:DropDownList ID="DropDownList2" runat="server" class="form-control"></asp:DropDownList>
-            </div>
-            <div class="mb-3">
-                <label for="" class="form-label text-success">商品类目</label>
-                <asp:DropDownList ID="DropDownList1" runat="server" class="form-control"></asp:DropDownList>
-            </div>
-            <div class="mb-3">
-                <label for="" class="form-label text-success">价格</label>
-                <input type="text" placeholder="" autocomplete="off" class="form-control" />
-            </div>
-            <div class="mb-3">
-                <label for="" class="form-label text-success">数量</label>
+                <label for="" class="form-label text-success">详细信息</label>
                 <input type="text" placeholder="" autocomplete="off" class="form-control" />
             </div>
             <div class="row">

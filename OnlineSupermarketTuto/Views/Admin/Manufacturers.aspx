@@ -1,36 +1,32 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="Products.aspx.cs" Inherits="OnlineSupermarketTuto.Views.Admin.Products" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="Manufacturers.aspx.cs" Inherits="OnlineSupermarketTuto.Views.Admin.Suppliers" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container-fluid">
+
+        <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <h3 class="text-center">商品管理</h3>
+                <h3 class="text-center">生产商管理</h3>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-4">
             <div class="mb-3">
-                <label for="" class="form-label text-success">商品名称</label>
-                <input type="text" placeholder="" autocomplete="off" class="form-control" />
-            </div>
-            <div class="mb-3">
                 <label for="" class="form-label text-success">生产商名称</label>
-                <asp:DropDownList ID="DropDownList2" runat="server" class="form-control"></asp:DropDownList>
-            </div>
-            <div class="mb-3">
-                <label for="" class="form-label text-success">商品类目</label>
-                <asp:DropDownList ID="DropDownList1" runat="server" class="form-control"></asp:DropDownList>
-            </div>
-            <div class="mb-3">
-                <label for="" class="form-label text-success">价格</label>
                 <input type="text" placeholder="" autocomplete="off" class="form-control" />
             </div>
             <div class="mb-3">
-                <label for="" class="form-label text-success">数量</label>
+                <label for="" class="form-label text-success">生产许可证号</label>
                 <input type="text" placeholder="" autocomplete="off" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label text-success">产地</label>
+                <asp:DropDownList ID="DropDownList1" runat="server" class="form-control">
+                    <asp:ListItem Text="地球" />
+                    <asp:ListItem Text="月球" />
+                    <asp:ListItem Text="冥王星" />
+                </asp:DropDownList>
             </div>
             <div class="row">
                 <div class="col-md-4">

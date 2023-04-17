@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="Products.aspx.cs" Inherits="OnlineSupermarketTuto.Views.Admin.Products" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="Customers.aspx.cs" Inherits="OnlineSupermarketTuto.Views.Admin.Customers" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -6,30 +6,26 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <h3 class="text-center">商品管理</h3>
+                <h3 class="text-center">用户管理</h3>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-4">
             <div class="mb-3">
-                <label for="" class="form-label text-success">商品名称</label>
+                <label for="" class="form-label text-success">用户名</label>
                 <input type="text" placeholder="" autocomplete="off" class="form-control" />
             </div>
             <div class="mb-3">
-                <label for="" class="form-label text-success">生产商名称</label>
-                <asp:DropDownList ID="DropDownList2" runat="server" class="form-control"></asp:DropDownList>
+                <label for="" class="form-label text-success">电子邮箱</label>
+                <input type="email" placeholder="" autocomplete="off" class="form-control" />
             </div>
             <div class="mb-3">
-                <label for="" class="form-label text-success">商品类目</label>
-                <asp:DropDownList ID="DropDownList1" runat="server" class="form-control"></asp:DropDownList>
-            </div>
-            <div class="mb-3">
-                <label for="" class="form-label text-success">价格</label>
+                <label for="" class="form-label text-success">电话号码</label>
                 <input type="text" placeholder="" autocomplete="off" class="form-control" />
             </div>
             <div class="mb-3">
-                <label for="" class="form-label text-success">数量</label>
+                <label for="" class="form-label text-success">地址</label>
                 <input type="text" placeholder="" autocomplete="off" class="form-control" />
             </div>
             <div class="row">
