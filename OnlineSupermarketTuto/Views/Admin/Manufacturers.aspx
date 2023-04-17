@@ -14,35 +14,36 @@
         <div class="col-md-4">
             <div class="mb-3">
                 <label for="" class="form-label text-success">生产商名称</label>
-                <input type="text" placeholder="" autocomplete="off" class="form-control" />
+                <input type="text" placeholder="" autocomplete="off" class="form-control" runat="server" id="MNameTb"/>
             </div>
             <div class="mb-3">
                 <label for="" class="form-label text-success">生产许可证号</label>
-                <input type="text" placeholder="" autocomplete="off" class="form-control" />
+                <input type="text" placeholder="" autocomplete="off" class="form-control"  runat="server" id="PermNumTb"/>
             </div>
             <div class="mb-3">
                 <label for="" class="form-label text-success">产地</label>
-                <asp:DropDownList ID="DropDownList1" runat="server" class="form-control">
+                <asp:DropDownList ID="PlaceCb" runat="server" class="form-control">
                     <asp:ListItem Text="地球" />
                     <asp:ListItem Text="月球" />
                     <asp:ListItem Text="冥王星" />
                 </asp:DropDownList>
             </div>
             <div class="row">
+                <asp:Label runat="server" ID="ErrMsg" class="text-danger"></asp:Label>
                 <div class="col-md-4">
-                    <asp:Button Text="保存" runat="server" class="btn-success btn-block btn" Width="100px" />
+                    <asp:Button Text="保存" runat="server" id="SaveBtn" class="btn-success btn-block btn" Width="100px" OnClick="SaveBtn_Click" />
                 </div>
                 <div class="col-md-4">
-                    <asp:Button Text="删除" runat="server" class="btn-danger btn-block btn" Width="100px" />
+                    <asp:Button Text="删除" runat="server" id ="DeleteBtn" class="btn-danger btn-block btn" Width="100px" OnClick="DeleteBtn_Click" />
                 </div>
                 <div class="col-md-4">
-                    <asp:Button Text="编辑" runat="server" class="btn-warning btn-block btn" Width="100px" />
+                    <asp:Button Text="编辑" runat="server" ID="EditBtn" class="btn-warning btn-block btn" Width="100px" OnClick="EditBtn_Click" />
                 </div>
             </div>
 
         </div>
         <div class="col-md-8">
-            <asp:GridView ID="GridView1" runat="server"></asp:GridView>
+            <asp:GridView ID="ManufactList" runat="server"></asp:GridView>
         </div>
     </div>
 </asp:Content>
