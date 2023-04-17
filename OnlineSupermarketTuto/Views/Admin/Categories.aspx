@@ -20,8 +20,9 @@
                 <input type="text" placeholder="" autocomplete="off" class="form-control" runat="server" id="DescriptionTb"/>
             </div>
             <div class="row">
+                <asp:Label runat="server" ID="ErrMsg" class="text-danger"></asp:Label>
                 <div class="col-md-4">
-                    <asp:Button Text="保存" ID="SaveBtn" runat="server" class="btn-success btn-block btn" Width="100px" />
+                    <asp:Button Text="保存" ID="SaveBtn" runat="server" class="btn-success btn-block btn" Width="100px" OnClick="SaveBtn_Click" />
                 </div>
                 <div class="col-md-4">
                     <asp:Button Text="删除" ID="DeleBtn" runat="server" class="btn-danger btn-block btn" Width="100px" />
