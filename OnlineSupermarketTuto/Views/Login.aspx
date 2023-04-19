@@ -29,13 +29,13 @@
                     </div>
                     <div class="mt-3">
                         <label for="" class="form-label">用户名</label>
-                        <input type="text" placeholder="" autocomplete="off" class="form-control" id="txtUserName" />
+                        <input type="text" placeholder="" autocomplete="off" class="form-control" runat="server" id="txtUserName" />
                     </div>
                     <div class="mt-3">
                         <label for="" class="form-label">密码</label>
-                        <input type="password" placeholder="" autocomplete="off" class="form-control" id="txtUserPwd" />
+                        <input type="password" placeholder="" autocomplete="off" class="form-control" runat="server" id="txtUserPwd" />
                     </div>
-
+                    <asp:Label runat="server" ID="ErrMsg" class="text-danger"></asp:Label>
                     <div class="mt-3 d-grid">
                         <asp:Button Text="登录" runat="server" Class="btn-success btn" ID="btnLogin" OnClick="btnLogin_Click" />
                     </div>

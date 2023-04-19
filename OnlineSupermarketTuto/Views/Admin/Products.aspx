@@ -38,16 +38,16 @@
                     <asp:Button Text="保存" runat="server" ID="SaveBtn" class="btn-success btn-block btn" Width="100px" OnClick="SaveBtn_Click" />
                 </div>
                 <div class="col-md-4">
-                    <asp:Button Text="删除" runat="server" ID="DeleBtn" class="btn-danger btn-block btn" Width="100px" />
+                    <asp:Button Text="删除" runat="server" ID="DeleBtn" class="btn-danger btn-block btn" Width="100px" OnClick="DeleBtn_Click" />
                 </div>
                 <div class="col-md-4">
-                    <asp:Button Text="编辑" runat="server" ID="EditBtn" class="btn-warning btn-block btn" Width="100px" />
+                    <asp:Button Text="编辑" runat="server" ID="EditBtn" class="btn-warning btn-block btn" Width="100px" OnClick="EditBtn_Click" />
                 </div>
             </div>
 
         </div>
         <div class="col-md-8">
-            <asp:GridView ID="ProductList" runat="server" class="table" AutoGenerateSelectButton="True" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Vertical" OnSelectedIndexChanged="ManufactList_SelectedIndexChanged">
+            <asp:GridView ID="ProductList" runat="server" class="table" AutoGenerateSelectButton="True" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Vertical" OnSelectedIndexChanged="ProductList_SelectedIndexChanged">
                 <AlternatingRowStyle BackColor="White" />
                 <FooterStyle BackColor="#CCCC99" />
                 <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />

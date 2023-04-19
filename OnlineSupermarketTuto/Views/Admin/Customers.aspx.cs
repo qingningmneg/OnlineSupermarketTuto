@@ -92,7 +92,7 @@ namespace OnlineSupermarketTuto.Views.Admin
                     string CEPhone = PhoneTb.Value;
                     string CEAdd = AddTb.Value;
 
-                    string Query = "update CustomerTb1 set CustName = '{0}',CustEnail = '{1}',CustPhone = '{2}',CustAddress='{3}' where CustId='{4}'";
+                    string Query = "update CustomerTb1 set user_no = '{0}',CustEnail = '{1}',CustPhone = '{2}',user_pwd='{3}' where CustId='{4}'";
                     Query = string.Format(Query, CName, CEmail, CEPhone,CEAdd, CustomerList.SelectedRow.Cells[1].Text);
                     Con.SetData(Query);
                     ShowCustomer();
