@@ -25,10 +25,10 @@
                     <asp:Button Text="保存" ID="SaveBtn" runat="server" class="btn-success btn-block btn" Width="100px" OnClick="SaveBtn_Click" />
                 </div>
                 <div class="col-md-4">
-                    <asp:Button Text="删除" ID="DeleBtn" runat="server" class="btn-danger btn-block btn" Width="100px" />
+                    <asp:Button Text="删除" ID="DeleBtn" runat="server" class="btn-danger btn-block btn" Width="100px" OnClick="DeleBtn_Click" />
                 </div>
                 <div class="col-md-4">
-                    <asp:Button Text="编辑" ID="EditBtn" runat="server" class="btn-warning btn-block btn" Width="100px" />
+                    <asp:Button Text="编辑" ID="EditBtn" runat="server" class="btn-warning btn-block btn" Width="100px" OnClick="EditBtn_Click" />
                 </div>
             </div>
 

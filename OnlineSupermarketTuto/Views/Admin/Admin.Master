@@ -128,12 +128,10 @@
 </head>
 <body>
 
-    <div class="container-fluid">
+    <div class="container-fluid" >
         <main>
-
-            <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
+            <div class="flex-shrink-0 p-3 bg-white"  style=" width: 280px;">
                 <h1 class="visually-hidden">Sidebars examples</h1>
-
                 <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
                     <img src="../../Assets/Images/Lemon.jpg" />
                     <span class="fs-5 fw-semibold">柠檬</span>
@@ -143,12 +141,12 @@
                         <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
                             Home
                         </button>
-                        <div class="collapse show" id="home-collapse">
+                        <div class="collapse show" id="home-collapse" >
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li><a href="#" class="link-dark rounded">商品</a></li>
-                                <li><a href="#" class="link-dark rounded">生产商</a></li>
-                                <li><a href="#" class="link-dark rounded">用户</a></li>
-                                <li><a href="#" class="link-dark rounded">类目</a></li>
+                                <li><a href="Products.aspx" class="link-dark rounded">商品</a></li>
+                                <li><a href="Manufacturers.aspx" class="link-dark rounded">生产商</a></li>
+                                <li><a href="Customers.aspx" class="link-dark rounded">用户</a></li>
+                                <li><a href="Categories.aspx" class="link-dark rounded">类目</a></li>
                                 <li><a href="#" class="link-dark rounded">退出</a></li>
                             </ul>
                         </div>

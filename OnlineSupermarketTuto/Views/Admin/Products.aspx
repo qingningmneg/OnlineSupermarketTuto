@@ -14,39 +14,51 @@
         <div class="col-md-4">
             <div class="mb-3">
                 <label for="" class="form-label text-success">商品名称</label>
-                <input type="text" placeholder="" autocomplete="off" class="form-control" />
+                <input type="text" placeholder="" autocomplete="off" runat="server" id="PNameTb" class="form-control" />
             </div>
             <div class="mb-3">
                 <label for="" class="form-label text-success">生产商名称</label>
-                <asp:DropDownList ID="DropDownList2" runat="server" class="form-control"></asp:DropDownList>
+                <asp:DropDownList ID="PManufactCb" runat="server" class="form-control"></asp:DropDownList>
             </div>
             <div class="mb-3">
                 <label for="" class="form-label text-success">商品类目</label>
-                <asp:DropDownList ID="DropDownList1" runat="server" class="form-control"></asp:DropDownList>
+                <asp:DropDownList ID="PCatCb" runat="server" class="form-control"></asp:DropDownList>
             </div>
             <div class="mb-3">
                 <label for="" class="form-label text-success">价格</label>
-                <input type="text" placeholder="" autocomplete="off" class="form-control" />
+                <input type="text" placeholder="" autocomplete="off" runat="server" id="PriceTb" class="form-control" />
             </div>
             <div class="mb-3">
                 <label for="" class="form-label text-success">数量</label>
-                <input type="text" placeholder="" autocomplete="off" class="form-control" />
+                <input type="text" placeholder="" autocomplete="off" runat="server" id="QtyTb" class="form-control" />
             </div>
             <div class="row">
+                <asp:Label runat="server" ID="ErrMsg" class="text-danger"></asp:Label>
                 <div class="col-md-4">
-                    <asp:Button Text="保存" runat="server" class="btn-success btn-block btn" Width="100px" />
+                    <asp:Button Text="保存" runat="server" ID="SaveBtn" class="btn-success btn-block btn" Width="100px" OnClick="SaveBtn_Click" />
                 </div>
                 <div class="col-md-4">
-                    <asp:Button Text="删除" runat="server" class="btn-danger btn-block btn" Width="100px" />
+                    <asp:Button Text="删除" runat="server" ID="DeleBtn" class="btn-danger btn-block btn" Width="100px" />
                 </div>
                 <div class="col-md-4">
-                    <asp:Button Text="编辑" runat="server" class="btn-warning btn-block btn" Width="100px" />
+                    <asp:Button Text="编辑" runat="server" ID="EditBtn" class="btn-warning btn-block btn" Width="100px" />
                 </div>
             </div>
 
         </div>
         <div class="col-md-8">
-            <asp:GridView ID="GridView1" runat="server"></asp:GridView>
+            <asp:GridView ID="ProductList" runat="server" class="table" AutoGenerateSelectButton="True" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Vertical" OnSelectedIndexChanged="ManufactList_SelectedIndexChanged">
+                <AlternatingRowStyle BackColor="White" />
+                <FooterStyle BackColor="#CCCC99" />
+                <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
+                <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
+                <RowStyle BackColor="#F7F7DE" />
+                <SelectedRowStyle BackColor="#CE5D5A" Font-Bold="True" ForeColor="White" />
+                <SortedAscendingCellStyle BackColor="#FBFBF2" />
+                <SortedAscendingHeaderStyle BackColor="#848384" />
+                <SortedDescendingCellStyle BackColor="#EAEAD3" />
+                <SortedDescendingHeaderStyle BackColor="#575357" />
+            </asp:GridView>
         </div>
     </div>
 </asp:Content>
